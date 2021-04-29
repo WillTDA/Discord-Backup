@@ -19,7 +19,7 @@ const client = new Discord.Client();
 
 const PREFIX = "!";
 
-backup.connectToDatabase("MongoDB Database URI");
+backup.connectToDatabase("MongoDB Database URI"); //THIS IS VERY IMPORTANT. MAKE SURE YOU DO THIS!
 
 client.on("ready", () => {
     console.log("Bot is Online")
