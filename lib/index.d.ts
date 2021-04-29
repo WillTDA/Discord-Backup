@@ -30,7 +30,7 @@ export declare const list: () => Promise<Object[]>;
  * Returns an Object of a Guild's Backups.
  * @param {Guild} guild The Discord Guild you want to list backups for.
  */
- export declare const listGuildBackups: (guild: Guild) => Promise<Object[]>;
+export declare const listGuildBackups: (guild: Guild) => Promise<Object[]>;
 /**
  * Set the MongoDB Database URI and Connect using it.
  * @param {String} uri The MongoDB Database URI.
