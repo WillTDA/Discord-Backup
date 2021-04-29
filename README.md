@@ -61,9 +61,9 @@ client.on("message", async message => {
         let list = await backup.listGuildBackups(message.guild) //You can get a list of all server backups by just using "backup.list()".
         console.log(list)
     }
-})
+});
 
-client.login("Discord Bot Token")
+client.login("Discord Bot Token");
 ```
 
 # Need Help? Join Our Discord Server!
