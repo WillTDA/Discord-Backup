@@ -1,4 +1,4 @@
-import { ChannelPermissionsData, TextChannelData, VoiceChannelData } from '.';
+import { ChannelPermissionsData, TextChannelData, VoiceChannelData } from './';
 export interface CategoryData {
     name: string;
     permissions: ChannelPermissionsData[];

@@ -12,5 +12,6 @@ export * from './LoadOptions';
 export * from './MessageData';
 export * from './RoleData';
 export * from './TextChannelData';
+export * from './ThreadChannelData';
 export * from './VoiceChannelData';
 export * from './WidgetData';

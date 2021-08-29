@@ -1,4 +1,4 @@
-import { BaseChannelData, MessageData } from '.';
+import { BaseChannelData, MessageData, ThreadChannelData } from './';
 export interface TextChannelData extends BaseChannelData {
     nsfw: boolean;
     parent?: string;
@@ -6,4 +6,5 @@ export interface TextChannelData extends BaseChannelData {
     rateLimitPerUser?: number;
     isNews: boolean;
     messages: MessageData[];
+    threads: ThreadChannelData[];
 }

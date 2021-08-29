@@ -1,5 +1,5 @@
-import type { CategoryData, ChannelPermissionsData, CreateOptions, LoadOptions, TextChannelData, VoiceChannelData } from './types';
-import type { CategoryChannel, Guild, TextChannel, VoiceChannel, NewsChannel } from 'discord.js';
+import type { CategoryData, ChannelPermissionsData, CreateOptions, LoadOptions, MessageData, TextChannelData, VoiceChannelData } from './types';
+import type { CategoryChannel, Guild, TextChannel, VoiceChannel, NewsChannel, ThreadChannel } from 'discord.js';
 /**
  * Gets the permissions for a channel
  */
@@ -8,6 +8,7 @@ export declare function fetchChannelPermissions(channel: TextChannel | VoiceChan
  * Fetches the voice channel data that is necessary for the backup
  */
 export declare function fetchVoiceChannelData(channel: VoiceChannel): Promise<VoiceChannelData>;
+export declare function fetchChannelMessages(channel: TextChannel | NewsChannel | ThreadChannel, options: CreateOptions): Promise<MessageData[]>;
 /**
  * Fetches the text channel data that is necessary for the backup
  */
